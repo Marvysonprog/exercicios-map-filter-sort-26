@@ -23,13 +23,12 @@ function retornarObjetos(turma: Alunas): AprovadasEReprovadas[] {
             media: media,
             aprovada: status
         }
+
         return objeto
 
     })
 
-    console.log(arrayMedias);
-
-    return []
+   return arrayMedias
 
 }
 console.log(retornarObjetos(turma))
