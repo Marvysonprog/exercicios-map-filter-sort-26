@@ -8,7 +8,7 @@ interface AprovadasEReprovadas {
 
 function retornarObjetos(turma: Alunas): AprovadasEReprovadas[] {
 
-    const arrayMedias: Array<AprovadasEReprovadas> = turma.map((aluna) => {
+    const avaliacoesAlunas: Array<AprovadasEReprovadas> = turma.map((aluna) => {
 
         let media: number = parseFloat(((aluna.prova.p1 + aluna.prova.p2 + aluna.prova.p3) / 3).toFixed(1))
 
@@ -28,7 +28,7 @@ function retornarObjetos(turma: Alunas): AprovadasEReprovadas[] {
 
     })
 
-   return arrayMedias
+   return avaliacoesAlunas
 
 }
 console.log(retornarObjetos(turma))
