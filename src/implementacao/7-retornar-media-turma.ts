@@ -8,8 +8,9 @@ function retornarMediaTurma(turma: Alunas): number {
   );
 
   arrayDeMedia.map((media) => (valorAcumulado += media));
+  
   const mediaDaTurma: number = parseFloat(
-    (valorAcumulado / turma.length).toFixed(1)
+    (valorAcumulado / arrayDeMedia.length).toFixed(1)
   );
 
   return mediaDaTurma;
