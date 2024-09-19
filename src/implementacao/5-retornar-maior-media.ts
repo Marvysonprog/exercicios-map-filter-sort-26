@@ -4,7 +4,7 @@ function retornarMaiorMedia(turma: Alunas): String {
   let maiorMedia: number = 0;
   let nomeAlunaMaiorMedia: String = "";
 
-  const arrayDeMedia: void [] = turma.map((aluna) => {
+  turma.map((aluna) => {
     const media: number =
       (aluna.prova.p1 + aluna.prova.p2 + aluna.prova.p3) / 3;
 
